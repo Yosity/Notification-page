@@ -1,0 +1,124 @@
+
+
+:root {
+    --blue: hsl(219, 83%, 37%);
+    --red: hsl(1, 90%, 64%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(218, 12%, 57%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    min-height: 100vh;
+    padding: 1rem ;
+
+}
+
+header,main{
+    max-width: 85rem;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#notification {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#notification span {
+    font-size: 1rem;
+    color: white;
+    padding: 3px 12px;
+    background-color: var(--blue);
+    margin-left: 10px;
+    border-radius: 0.5rem;
+}
+
+header p {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+header p:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.component {
+    font-size: 0.9rem;
+    background-color: rgba(236, 241, 255, 0.13);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    padding:0.9rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.component.active{
+    background-color: var(--Light-grayish-blue-1);
+}
+
+.component.active .red-circle{
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: var(--red);
+    border-radius: 1rem;
+    margin-left: 5px;
+}
+.component p {
+    margin: 0;
+    color: var(--Dark-grayish-blue);
+
+}
+.component img {
+    width: 2.5rem;
+    cursor: pointer;
+}
+.time-ago{
+    margin-top: 1rem;
+    color: var(--Grayish-blue);
+    font-size: 0.8rem;
+}
+.profile-name{
+    cursor: pointer;
+    color: black;
+}
+
+.component span {
+    font-weight: bold;
+    cursor: pointer;
+}
+.component span:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+.chess-club{
+    color: var(--blue);
+}
+.post-about{
+    color: var(--Dark-grayish-blue);
+}
+
+#article {
+    border: 1px solid var(--Light-grayish-blue-2);
+    padding: 15px;
+    margin-top: 0.6rem;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+#article:hover {
+    background-color: var(--Light-grayish-blue-1);
+}
